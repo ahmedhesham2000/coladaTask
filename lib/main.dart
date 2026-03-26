@@ -27,9 +27,7 @@ void main() async {
       : const Locale('en', 'US');
   runApp(
     ProviderScope(
-      observers: [
-        // LoggerObserver(), // Uncomment if you want to log provider changes
-      ],
+      observers: [],
       child: EasyLocalization(
         supportedLocales: const [Locale('ar', 'EG'), Locale('en', 'US')],
         path: 'assets/translations',

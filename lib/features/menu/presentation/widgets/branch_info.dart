@@ -15,7 +15,6 @@ class BranchInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 66.h,
       decoration: const BoxDecoration(
         color: Color(0xFFF9FEF7),
         borderRadius: BorderRadius.only(
