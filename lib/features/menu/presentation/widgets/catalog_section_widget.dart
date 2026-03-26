@@ -46,19 +46,18 @@ class CatalogSectionWidget extends StatelessWidget {
             // --- Grid for Offers ---
             if (hasOffers) ...[
               SizedBox(height: 16.h),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16.w),
-                child: GridView.builder(
-                  shrinkWrap: true,
-                  padding: EdgeInsets.zero,
-                  physics: const NeverScrollableScrollPhysics(),
+              SizedBox(
+                height: 260.h,
+
+                child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+
+                  padding: EdgeInsets.symmetric(horizontal: 16.w),
+
                   itemCount: section.offers.length,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    mainAxisSpacing: 8.h,
-                    crossAxisSpacing: 12.w,
-                    childAspectRatio: 0.75,
-                  ),
+
+                  separatorBuilder: (_, _) => SizedBox(width: 12.w),
+
                   itemBuilder: (_, i) => OfferCard(offer: section.offers[i]),
                 ),
               ),
