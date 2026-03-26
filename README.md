@@ -3,6 +3,15 @@
 
 A Flutter Developer Assessment for Colada, implementing a pixel-perfect Restaurant Profile & Menu Page based on Figma design.
 
+## 📸 Screenshots
+
+<p align="center">
+	<img src="assets/images/screenshot1.png" alt="Menu Screen" width="250" />
+	<img src="assets/images/screenshot2.png" alt="Offers Screen" width="250" />
+	<img src="assets/images/screenshot3.png" alt="Cart Screen" width="250" />
+</p>
+
+
 ---
 
 ## 📝 Overview
@@ -87,15 +96,6 @@ This app showcases a restaurant’s profile and menu, featuring a sticky header,
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-	<img src="assets/images/screenshot1.png" alt="Menu Screen" width="250" />
-	<img src="assets/images/screenshot2.png" alt="Offers Screen" width="250" />
-	<img src="assets/images/screenshot3.png" alt="Cart Screen" width="250" />
-</p>
-
----
 
 [Download the latest APK](./apk/app-release.apk)
 
