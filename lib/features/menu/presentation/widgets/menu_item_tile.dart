@@ -151,8 +151,9 @@ class MenuItemTile extends ConsumerWidget {
                       onAdd: () => cart.addItem(
                         CartModel(
                           id: item.id,
-                          name: isAr ? item.nameAr : item.nameEn,
                           image: item.photo,
+                          nameAr: item.nameAr,
+                          nameEn: item.nameEn,
                           quantity: 1,
                           price: item.hasDiscount
                               ? item.sellingPrice

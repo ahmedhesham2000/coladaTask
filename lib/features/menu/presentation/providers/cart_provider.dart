@@ -50,7 +50,8 @@ class Cart extends _$Cart {
         if (i == index)
           CartModel(
             id: state[i].id,
-            name: state[i].name,
+            nameAr: state[i].nameAr,
+            nameEn: state[i].nameEn,
             image: state[i].image,
             quantity: state[i].quantity + 1,
             price: state[i].price,
@@ -72,7 +73,8 @@ class Cart extends _$Cart {
           if (i == index)
             CartModel(
               id: state[i].id,
-              name: state[i].name,
+              nameAr: state[i].nameAr,
+              nameEn: state[i].nameEn,
               image: state[i].image,
               quantity: state[i].quantity - 1,
               price: state[i].price,

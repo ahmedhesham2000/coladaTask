@@ -77,9 +77,8 @@ class OfferCard extends ConsumerWidget {
                     onAdd: () => cart.addItem(
                       CartModel(
                         id: offer.id,
-                        name: context.locale.languageCode == 'ar'
-                            ? offer.nameAr
-                            : offer.nameEn,
+                        nameAr: offer.nameAr,
+                        nameEn: offer.nameEn,
                         quantity: 1,
                         price: offer.discountedPrice,
                         image: offer.photo,

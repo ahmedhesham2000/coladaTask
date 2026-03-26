@@ -1,19 +1,21 @@
 import 'package:coladatask/config/theme/app_colors.dart';
 import 'package:coladatask/features/menu/domain/entities/venue.dart';
+import 'package:coladatask/features/menu/presentation/providers/menu_provider.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class CoverSection extends StatelessWidget {
+class CoverSection extends ConsumerWidget {
   const CoverSection({super.key, required this.venue});
   final VenueEntity venue;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Stack(
       children: [
         SizedBox(
@@ -76,6 +78,7 @@ class CoverSection extends StatelessWidget {
                 }
 
                 if (context.mounted) {
+                  ref.read(selectedCategoryProvider.notifier).select(0);
                   Phoenix.rebirth(context);
                 }
               },

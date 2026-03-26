@@ -1,13 +1,15 @@
 class CartModel {
   String id;
-  String name;
+  String nameAr;
+  String nameEn;
   String image;
   int quantity;
   double price;
 
   CartModel({
     required this.id,
-    required this.name,
+    required this.nameAr,
+    required this.nameEn,
     required this.image,
     required this.quantity,
     required this.price,
@@ -15,7 +17,8 @@ class CartModel {
 
   Map<String, dynamic> toJson() => {
     'id': id,
-    'name': name,
+    'nameAr': nameAr,
+    'nameEn': nameEn,
     'image': image,
     'quantity': quantity,
     'price': price,
@@ -23,7 +26,8 @@ class CartModel {
 
   factory CartModel.fromJson(Map<String, dynamic> json) => CartModel(
     id: json['id'] as String,
-    name: json['name'] as String? ?? '',
+    nameAr: json['nameAr'] as String? ?? '',
+    nameEn: json['nameEn'] as String? ?? '',
     image: json['image'] as String? ?? '',
     quantity: json['quantity'] as int,
     price: (json['price'] as num).toDouble(),

@@ -101,7 +101,9 @@ class CartPage extends ConsumerWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    item.name,
+                                    context.locale.languageCode == 'ar'
+                                        ? item.nameAr
+                                        : item.nameEn,
                                     style: AppStyles.style60016(
                                       context: context,
                                     ),
