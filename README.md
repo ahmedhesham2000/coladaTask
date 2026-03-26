@@ -97,16 +97,6 @@ This app showcases a restaurant’s profile and menu, featuring a sticky header,
 
 ---
 
-
----
-
-## 🎬 Demo Video
-
-<p align="center">
-	<img src="assets/images/demo.gif" alt="Demo GIF" width="320" />
-</p>
----
-
 [Download the latest APK](./apk/app-release.apk)
 
 ---
