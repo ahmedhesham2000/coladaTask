@@ -1,0 +1,19 @@
+{
+  "app_name": "كولودا تاسك",
+    "title": "القائمة",
+    "body": "صفحة القائمة",
+    "pickup_from_branch": "استلام من الفرع",
+    "branch_location":"فرع الاستلام: ",
+    "km": "كم",
+    "open_until": "مفتوح حتى ",
+    "change": "تغيير",
+    "closed": "مغلق",
+    "most_selling": "الأكثر مبيعاً",
+    "pickup_order_summary": "ملخص طلب الاستلام",
+    "no_items_available": "لا توجد عناصر متاحة",
+    "failed_to_load_venue": "فشل تحميل المطعم",
+    "failed_to_load_catalog": "فشل تحميل القائمة",
+    "cart": "السلة",
+    "cart_empty": "سلة التسوق فارغة",
+    "total": "المجموع"
+}

@@ -1,0 +1,19 @@
+{
+  "app_name": "colada Task",
+    "title": "Menu",
+    "body": "Menu Page",
+    "pickup_from_branch": "Pickup",
+    "branch_location":"Branch Pickup: ",
+    "km": "km",
+    "open_until": "Open to ",
+    "change": "Change",
+    "closed": "Closed",
+    "most_selling": "Most Selling",
+    "pickup_order_summary": "Pickup Order Summary",
+    "no_items_available": "No items available",
+    "failed_to_load_venue": "Failed to load venue",
+    "failed_to_load_catalog": "Failed to load catalog",
+    "cart": "Cart",
+    "cart_empty": "Your cart is empty",
+    "total": "Total"
+}
